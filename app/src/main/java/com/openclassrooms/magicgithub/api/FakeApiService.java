@@ -26,14 +26,7 @@ public class FakeApiService implements ApiService {
     public void generateRandomUser() {
         // TODO: A modifier
 
-        User userTaken;
-
-        do {
-            userTaken = User.random();
-        }while(users.contains(userTaken));
-
-        getUsers().add(userTaken);
-
+        getUsers().add(User.random());
     }
 
     /**
